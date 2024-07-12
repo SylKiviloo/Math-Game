@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>And...GO!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="title">
+    <h1>And...Go!</h1>
+    <h2>10 Second Math Game</h2>
+  </div>
+  <div class="container">
+    <div class="game-area">
+      <div id="current-score" class="score-box">
+        "CURRENT SCORE:"
+      </div>
+
+      <div id="game-play" class="game-box">
+        <div id="question-answer">
+          <h1 id="question"></h1>
+          <input id="answer" type="number" name="answer" value="0">
+        </div>
+        <button id="start-button">And...Go!</button>
+        <p>TIMER</p>
+      </div>
+
+      <div id="high-score" class="score-box">
+        "HIGH SCORE:"
+      </div>
+    </div>
+
+    <div class="setup-area">
+      <div id="instructions">
+        <h2>How To Play</h2>
+        <ul>
+          <li>Set your highest number limit for questions</li>
+          <li>Each correct answer adds 1 extra second</li>
+          <li>Score 1 point for each correct answer</li>
+          <li>Game Over when timer reaches 0</li>
+          <li>Test your skills. Good luck!</li>
+        </ul>
+      </div>
+      <div id="number-limit">
+        <h2>Number Limit</h2>
+        <input type="number" id="limit" name="limit" value="10">
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
