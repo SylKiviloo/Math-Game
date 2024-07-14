@@ -15,21 +15,22 @@
   </div>
   <div class="container">
     <div class="game-area">
-      <div id="current-score" class="score-box">
-        "CURRENT SCORE:"
+      <div class="score-box">
+        <h3>Current Score:<br><span id="current-score">0</span></h3>
       </div>
 
       <div id="game-play" class="game-box">
         <div id="question-answer">
           <h1 id="question"></h1>
-          <input id="answer" type="number" name="answer" value="0">
+          <input id="answer" type="text" inputmode=”numeric” />
         </div>
         <button id="start-button">And...Go!</button>
-        <p>TIMER</p>
+        <h1 id="timer">10</h1>
+        <p>Seconds Left</p>
       </div>
 
-      <div id="high-score" class="score-box">
-        "HIGH SCORE:"
+      <div class="score-box">
+        <h3>Highest Score:<br><span id="highest-score"></span></h3>
       </div>
     </div>
 
@@ -37,16 +38,16 @@
       <div id="instructions">
         <h2>How To Play</h2>
         <ul>
-          <li>Set your highest number limit for questions</li>
+          <li>Set your highest number limit for the questions</li>
           <li>Each correct answer adds 1 extra second</li>
           <li>Score 1 point for each correct answer</li>
-          <li>Game Over when timer reaches 0</li>
+          <li>Game over when timer reaches 0</li>
           <li>Test your skills. Good luck!</li>
         </ul>
       </div>
       <div id="number-limit">
         <h2>Number Limit</h2>
-        <input type="number" id="limit" name="limit" value="10">
+        <input id="limit" type="number" id="limit" value="10" />
       </div>
     </div>
   </div>
