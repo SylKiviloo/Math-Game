@@ -30,7 +30,7 @@
       </div>
 
       <div class="score-box">
-        <h3>Highest Score:<br><span id="highest-score"></span></h3>
+        <h3>Highest Score:<br><span id="highest-score">0</span></h3>
       </div>
     </div>
 
@@ -47,7 +47,10 @@
       </div>
       <div id="number-limit">
         <h2>Number Limit</h2>
-        <input id="limit" type="number" id="limit" value="10" />
+        <p>Between 10 and 50</p>
+        <input id="slider" type="range" value="10" min="10" max="50" />
+        <p>Value: &nbsp;<span id="value"></span></p>
+        <!--<label id="limitLabel"></label>-->
       </div>
     </div>
   </div>
